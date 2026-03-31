@@ -640,3 +640,140 @@ body {
         opacity: 1;
     }
 }
+
+/* ============================
+   RESPONSIVE FIX (MOBILE FIRST)
+============================ */
+
+/* Evita que cosas se salgan en móvil */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER RESPONSIVE */
+@media (max-width: 768px) {
+    .header {
+        padding: 28px 16px;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+    }
+
+    .header-content p {
+        font-size: 13px;
+    }
+
+    .language-selector {
+        width: 100%;
+        max-width: 420px;
+        justify-content: space-between;
+        padding: 10px 14px;
+    }
+
+    .custom-dropdown {
+        width: 160px;
+    }
+}
+
+/* IPHONE / CELULAR PEQUEÑO */
+@media (max-width: 420px) {
+    .header-content h1 {
+        font-size: 24px;
+    }
+
+    .language-selector {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .custom-dropdown {
+        width: 100%;
+    }
+
+    .dropdown-btn {
+        width: 100%;
+    }
+}
+
+/* MENU RESPONSIVE */
+@media (max-width: 768px) {
+    .menu {
+        padding: 14px;
+        gap: 10px;
+    }
+
+    .btn {
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 420px) {
+    .btn {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+
+/* INPUTS RESPONSIVE */
+@media (max-width: 768px) {
+    .inputs {
+        padding: 16px;
+    }
+
+    .inputs input {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+/* NOTICIAS RESPONSIVE */
+@media (max-width: 768px) {
+    .news-container {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
+
+/* MODAL RESPONSIVE */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 16px;
+    }
+
+    .modal-content img {
+        height: 200px;
+    }
+
+    .modal-content h2 {
+        font-size: 18px;
+    }
+
+    .modal-content p {
+        font-size: 13px;
+    }
+}
+
+/* TOAST RESPONSIVE */
+@media (max-width: 420px) {
+    .toast-container {
+        right: 10px;
+        left: 10px;
+    }
+
+    .toast {
+        min-width: auto;
+        width: 100%;
+    }
+}

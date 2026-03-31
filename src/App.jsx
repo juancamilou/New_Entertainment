@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import LanguageDropdown from "./components/LanguageDropdown";
 import Loader from "./components/Loader";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import NewsCard from "./components/NewsCard";
 import NewsModal from "./components/NewsModal";
 import SearchPanel from "./components/SearchPanel";

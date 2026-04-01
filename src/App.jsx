@@ -339,7 +339,9 @@ export default function App() {
       <Toast toasts={toasts} />
 
       <footer className="footer">
-        <p>Juan Camilo Uribe Chica | TheNewsAPI | Entertainment USA</p>
+        <p>
+          Juan Camilo Uribe Chica | 3144615 | TheNewsAPI | Entertainment USA
+        </p>
       </footer>
     </div>
   );
